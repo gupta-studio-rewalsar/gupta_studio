@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8fafc">
+  <title>Rewalsar Darpan - Social Links</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #14243b;
+      background: linear-gradient(145deg, #f8fafc, #eaf0f7);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 404px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 26px;
+      font-weight: 750;
+      letter-spacing: -0.7px;
+    }
+
+    .subtitle {
+      margin: 0 0 30px;
+      color: #60738f;
+      font-size: 13.5px;
+      line-height: 1.6;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      min-height: 51px;
+      gap: 13px;
+      padding: 0 21px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 650;
+      text-align: left;
+      box-shadow: 0 3px 5px rgba(22, 37, 59, 0.12);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .social-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 7px 14px rgba(22, 37, 59, 0.16);
+    }
+
+    .facebook {
+      color: white;
+      background: #1877f2;
+    }
+
+    .google {
+      color: #14243b;
+      background: white;
+      border: 1px solid #dce4ed;
+    }
+
+    .instagram {
+      color: white;
+      background: linear-gradient(
+        105deg, #873fc1, #e1306c, #fd282b, #ffb13f
+      );
+    }
+
+    .icon {
+      width: 23px;
+      height: 23px;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .facebook .icon {
+      background: white;
+      color: #1877f2;
+      border-radius: 50%;
+      width: 21px;
+      height: 21px;
+      font-size: 18px;
+    }
+
+    .google .icon {
+      font-size: 24px;
+      background: conic-gradient(
+        from -45deg,
+        #4285f4 0deg 90deg,
+        #34a853 90deg 180deg,
+        #fbbc05 180deg 245deg,
+        #ea4335 245deg 310deg,
+        #4285f4 310deg
+      );
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    .instagram .icon {
+      font-size: 25px;
+    }
+
+    .label {
+      flex: 1;
+    }
+
+    .external {
+      width: 18px;
+      height: 18px;
+      opacity: 0.85;
+      flex-shrink: 0;
+    }
+
+    .status {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 7px;
+      min-height: 32px;
+      margin-top: 7px;
+      color: #60738f;
+      font-size: 11px;
+    }
+
+    .check {
+      color: #10b981;
+      font-size: 15px;
+    }
+
+    /* Floating WhatsApp button */
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22);
+      z-index: 9999;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    .whatsapp-float svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        max-width: 404px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .whatsapp-float {
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .social-link,
+      .whatsapp-float {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Social Links</h1>
+
+    <p class="subtitle">
+      Quick access to Facebook, Google, and Instagram
+    </p>
+
+    <nav class="links" aria-label="Social media links">
+
+      <!-- FACEBOOK -->
+      <a class="social-link facebook"
+         href="https://www.facebook.com/share/19cHVpehfb/"
+         target="_blank"
+         rel="noopener noreferrer"
+         data-name="Facebook">
+
+        <span class="icon">f</span>
+        <span class="label">Facebook</span>
+
+        <svg class="external" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round"
+             stroke-linejoin="round">
+          <path d="M14 4h6v6M20 4l-9 9"/>
+          <path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/>
+        </svg>
+      </a>
+
+      <!-- GOOGLE -->
+      <a class="social-link google"
+         href="https://www.google.com/searchviewer/10?svid=CAwSHRIbCgNwdnESFENnMHZaeTh4TVhkeFpIUTFiV3QyGAo"
+         target="_blank"
+         rel="noopener noreferrer"
+         data-name="Google">
+
+        <span class="icon">G</span>
+        <span class="label">Google</span>
+
+        <svg class="external" viewBox="0 0 24 24"
+             fill="none" stroke="#7185a1"
+             stroke-width="1.8" stroke-linecap="round"
+             stroke-linejoin="round">
+          <path d="M14 4h6v6M20 4l-9 9"/>
+          <path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/>
+        </svg>
+      </a>
+
+      <!-- INSTAGRAM -->
+      <a class="social-link instagram"
+         href="https://www.instagram.com/rewalsar_darpan?cplk=MTcyeXRzcnEwazdyNg=="
+         target="_blank"
+         rel="noopener noreferrer"
+         data-name="Instagram">
+
+        <span class="icon">◎</span>
+        <span class="label">Instagram</span>
+
+        <svg class="external" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round"
+             stroke-linejoin="round">
+          <path d="M14 4h6v6M20 4l-9 9"/>
+          <path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/>
+        </svg>
+      </a>
+
+    </nav>
+
+    <div class="status" id="status"
+         role="status" aria-live="polite">
+      <span class="check">✓</span>
+      <span>Ready to open a link</span>
+    </div>
+  </main>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <!-- Replace 91XXXXXXXXXX with your WhatsApp number -->
+  <a class="whatsapp-float"
+     href="https://wa.me/919418359966"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat with us on WhatsApp"
+     title="Chat on WhatsApp">
+
+    <svg viewBox="0 0 24 24"
+         fill="currentColor"
+         xmlns="http://www.w3.org/2000/svg"
+         aria-hidden="true">
+      <path d="M20.52 3.48A11.8 11.8 0 0 0 12.08 0C5.5 0 .15 5.35.15 11.93c0 2.1.55 4.16 1.6 5.98L.05 24l6.24-1.64a11.95 11.95 0 0 0 5.78 1.47h.01c6.58 0 11.93-5.35 11.93-11.93a11.85 11.85 0 0 0-3.49-8.42ZM12.08 21.8h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.72.98.99-3.63-.24-.37a9.85 9.85 0 0 1-1.52-5.26c0-5.47 4.45-9.92 9.91-9.92a9.85 9.85 0 0 1 7.02 2.91 9.85 9.85 0 0 1 2.9 7.02c0 5.47-4.45 9.91-9.93 9.91Zm5.44-7.43c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.47-2.4-1.49-.89-.79-1.49-1.77-1.67-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.48 1.69.62.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+    </svg>
+  </a>
+
+  <script>
+    const status = document.getElementById("status");
+
+    document.querySelectorAll(".social-link").forEach(link => {
+      link.addEventListener("click", () => {
+        const name = link.dataset.name;
+
+        status.innerHTML =
+          '<span class="check">✓</span>' +
+          '<span>Opening ' + name + '...</span>';
+      });
+    });
+  </script>
+</body>
+</html>
